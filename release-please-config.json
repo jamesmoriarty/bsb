@@ -1,0 +1,10 @@
+{
+  "bootstrap-sha": "cbca6cccfb2b5a8c312dff07348ca418de3b14cc",
+  "draft-pull-request": true,
+  "packages": {
+    ".": {
+      "release-type": "ruby",
+      "version-file": "lib/bsb/version.rb"
+    }
+  }
+}
