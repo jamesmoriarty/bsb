@@ -4,6 +4,7 @@
   "packages": {
     ".": {
       "release-type": "ruby",
+      "package-name": "bsb",
       "version-file": "lib/bsb/version.rb"
     }
   }
