@@ -2,7 +2,7 @@ name: Release Please
 
 on:
   push:
-    branches: [master]
+    branches: [bugfix/version-rb-bump]
 
 jobs:
   release-please:
@@ -12,10 +12,10 @@ jobs:
         id: release
         with:
           # https://github.com/google-github-actions/release-please-action
-          default-branch: master
+          default-branch: bugfix/version-rb-bump
           release-type: ruby
           package-name: bsb
-          version-file: lib/bsb/version.rb
+          version-file: ./lib/bsb/version.rb
           fork: false
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
