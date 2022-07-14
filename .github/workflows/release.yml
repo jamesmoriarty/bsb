@@ -11,8 +11,16 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
+          # https://github.com/google-github-actions/release-please-action
           default-branch: master
-          command: manifest
+          release-type: ruby
+          package-name: bsb
+          version-file: lib/bsb/version.rb
+          fork: false
+          bump-minor-pre-major: true
+          bump-patch-for-minor-pre-major: true
+          # https://github.com/googleapis/release-please/blob/main/docs/manifest-releaser.md
+          # command: manifest 
 
   build:
     needs: release-please
