@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bsb (0.0.16)
+    bsb (0.6.0)
       activemodel
 
 GEM
